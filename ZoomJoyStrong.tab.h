@@ -52,17 +52,8 @@ extern int yydebug;
     POINT = 262,
     FLOAT = 263,
     INT = 264,
-    X = 265,
-    Y = 266,
-    U = 267,
-    V = 268,
-    R = 269,
-    W = 270,
-    H = 271,
-    G = 272,
-    B = 273,
-    END = 274,
-    END_STATEMENT = 275
+    END = 265,
+    END_STATEMENT = 266
   };
 #endif
 
@@ -71,10 +62,10 @@ extern int yydebug;
 
 union YYSTYPE
 {
-#line 6 "ZoomJoyStrong.y" /* yacc.c:1910  */
+#line 7 "ZoomJoyStrong.y" /* yacc.c:1910  */
 int ival; float fval;
 
-#line 78 "ZoomJoyStrong.tab.h" /* yacc.c:1910  */
+#line 69 "ZoomJoyStrong.tab.h" /* yacc.c:1910  */
 };
 
 typedef union YYSTYPE YYSTYPE;

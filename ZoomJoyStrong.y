@@ -1,5 +1,6 @@
 %{
 	#include <stdio.h>
+	int yylex();
 	int yyerror(const char* err);
 %}
 
@@ -11,15 +12,6 @@
 %token POINT
 %token FLOAT
 %token INT
-%token X
-%token Y
-%token U
-%token V
-%token R
-%token W
-%token H
-%token G
-%token B
 %token END
 %token END_STATEMENT
 
@@ -32,11 +24,11 @@ list_of_expr:	expr
 	|	list_of_expr expr
 	;
 
-expr:		LINE INT X INT Y INT U INT V END_STATEMENT
-	|	POINT INT X INT Y END_STATEMENT
-	|	CIRCLE INT X INT Y INT R END_STATEMENT
-	|	RECTANGLE INT X INT Y INT W INT H END_STATEMENT
-	|	SET_COLOR INT R INT G INT B END_STATEMENT
+expr:		LINE INT INT INT INT END_STATEMENT
+	|	POINT INT INT END_STATEMENT
+	|	CIRCLE INT INT INT END_STATEMENT
+	|	RECTANGLE INT INT INT INT END_STATEMENT
+	|	SET_COLOR INT INT INT END_STATEMENT
 	|	END
 	;
 
