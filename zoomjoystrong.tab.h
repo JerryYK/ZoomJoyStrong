@@ -62,10 +62,10 @@ extern int yydebug;
 
 union YYSTYPE
 {
-#line 11 "ZoomJoyStrong.y" /* yacc.c:1910  */
+#line 11 "zoomjoystrong.y" /* yacc.c:1910  */
 int ival; float fval;
 
-#line 69 "ZoomJoyStrong.tab.h" /* yacc.c:1910  */
+#line 69 "zoomjoystrong.tab.h" /* yacc.c:1910  */
 };
 
 typedef union YYSTYPE YYSTYPE;

@@ -1,5 +1,5 @@
 %{
-    #include "ZoomJoyStrong.tab.h"
+    #include "zoomjoystrong.tab.h"
     #include <stdio.h>
     #include <stdlib.h>
 	

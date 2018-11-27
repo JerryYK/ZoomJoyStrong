@@ -515,9 +515,9 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "ZoomJoyStrong.lex"
-#line 2 "ZoomJoyStrong.lex"
-    #include "ZoomJoyStrong.tab.h"
+#line 1 "zoomjoystrong.lex"
+#line 2 "zoomjoystrong.lex"
+    #include "zoomjoystrong.tab.h"
     #include <stdio.h>
     #include <stdlib.h>
 	
@@ -739,7 +739,7 @@ YY_DECL
 		}
 
 	{
-#line 11 "ZoomJoyStrong.lex"
+#line 11 "zoomjoystrong.lex"
 
 #line 744 "lex.yy.c"
 
@@ -810,68 +810,68 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 12 "ZoomJoyStrong.lex"
+#line 12 "zoomjoystrong.lex"
 {yylval.ival = atoi(yytext); return INT;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 13 "ZoomJoyStrong.lex"
+#line 13 "zoomjoystrong.lex"
 return POINT;
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 14 "ZoomJoyStrong.lex"
+#line 14 "zoomjoystrong.lex"
 {yylval.fval = atoi(yytext); return FLOAT;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 15 "ZoomJoyStrong.lex"
+#line 15 "zoomjoystrong.lex"
 return POINT;
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 16 "ZoomJoyStrong.lex"
+#line 16 "zoomjoystrong.lex"
 return LINE;
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 17 "ZoomJoyStrong.lex"
+#line 17 "zoomjoystrong.lex"
 return CIRCLE;
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 18 "ZoomJoyStrong.lex"
+#line 18 "zoomjoystrong.lex"
 return RECTANGLE;
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 19 "ZoomJoyStrong.lex"
+#line 19 "zoomjoystrong.lex"
 return SET_COLOR;
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 20 "ZoomJoyStrong.lex"
+#line 20 "zoomjoystrong.lex"
 return END_STATEMENT;
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 21 "ZoomJoyStrong.lex"
+#line 21 "zoomjoystrong.lex"
 return END;
 	YY_BREAK
 case 11:
 /* rule 11 can match eol */
 YY_RULE_SETUP
-#line 22 "ZoomJoyStrong.lex"
+#line 22 "zoomjoystrong.lex"
 ;
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 23 "ZoomJoyStrong.lex"
+#line 23 "zoomjoystrong.lex"
 printf("%d, %s\n", yylineno, "NO_MATCH");
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 24 "ZoomJoyStrong.lex"
+#line 24 "zoomjoystrong.lex"
 ECHO;
 	YY_BREAK
 #line 877 "lex.yy.c"
@@ -1891,7 +1891,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 24 "ZoomJoyStrong.lex"
+#line 24 "zoomjoystrong.lex"
 
 
 
