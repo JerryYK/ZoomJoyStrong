@@ -1,14 +1,18 @@
 %{
     #include "ZoomJoyStrong.tab.h"
+    #include <stdio.h>
+    #include <stdlib.h>
 	
 %}
  
 %option yylineno
+%option noyywrap
 
 %%
-[0-9]+				return INT;
+[0-9]+				{yylval.ival = atoi(yytext); return INT;}
 [\.]				return POINT;
-[0-9]*\.?[0-9]*			return FLOAT;
+[0-9]*\.?[0-9]*			{yylval.fval = atoi(yytext); return FLOAT;}
+(point|POINT)			return POINT;
 (LINE|line)			return LINE;
 (CIRCLE|circle)			return CIRCLE;
 (RECTANGLE|rectangle)		return RECTANGLE;
