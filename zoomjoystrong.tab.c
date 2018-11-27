@@ -443,7 +443,7 @@ static const yytype_uint8 yytranslate[] =
 static const yytype_uint8 yyrline[] =
 {
        0,    26,    26,    29,    30,    33,    46,    57,    69,    82,
-      94
+      96
 };
 #endif
 
@@ -1297,9 +1297,9 @@ yyreduce:
     {
 
 				//check the input paramters are valid
-				if((yyvsp[-2].ival) > HEIGHT || (yyvsp[-2].ival) > WIDTH || (yyvsp[-2].ival) < 0){printf("Unvaild $2 input!\n");}
-				else if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){printf("Unvaild $3 input!\n");}
-				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){printf("Unvaild $4 input!\n");}
+				if((yyvsp[-2].ival) > 255 || (yyvsp[-2].ival) < 0){printf("Unvaild $2 input!\n");}
+				else if((yyvsp[-1].ival) > 255 || (yyvsp[-1].ival) < 0){printf("Unvaild $3 input!\n");}
+				else if((yyvsp[0].ival) > 255 || (yyvsp[0].ival) < 0){printf("Unvaild $4 input!\n");}
 				else{
 					//set the color
 					printf("Set COLOR (%d,%d,%d)\n", (yyvsp[-2].ival), (yyvsp[-1].ival), (yyvsp[0].ival));
@@ -1310,7 +1310,7 @@ yyreduce:
     break;
 
   case 10:
-#line 94 "zoomjoystrong.y" /* yacc.c:1648  */
+#line 96 "zoomjoystrong.y" /* yacc.c:1648  */
     {
 			//end of the programe
 			printf("Closing the program, please be patient.\n");
@@ -1548,7 +1548,7 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 101 "zoomjoystrong.y" /* yacc.c:1907  */
+#line 103 "zoomjoystrong.y" /* yacc.c:1907  */
 
 
 int main(int argc, char** argv){

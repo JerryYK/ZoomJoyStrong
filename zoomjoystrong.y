@@ -82,15 +82,17 @@ expr:		LINE INT INT INT INT{
 	|	SET_COLOR INT INT INT{
 
 				//check the input paramters are valid
-				if($2 > HEIGHT || $2 > WIDTH || $2 < 0){printf("Unvaild $2 input!\n");}
-				else if($3 > HEIGHT || $3 > WIDTH || $3 < 0){printf("Unvaild $3 input!\n");}
-				else if($4 > HEIGHT || $4 > WIDTH || $4 < 0){printf("Unvaild $4 input!\n");}
+				if($2 > 255 || $2 < 0){printf("Unvaild $2 input!\n");}
+				else if($3 > 255 || $3 < 0){printf("Unvaild $3 input!\n");}
+				else if($4 > 255 || $4 < 0){printf("Unvaild $4 input!\n");}
 				else{
 					//set the color
 					printf("Set COLOR (%d,%d,%d)\n", $2, $3, $4);
 					set_color($2, $3, $4);
 				}
 			}
+
+
 	|	END{
 			//end of the programe
 			printf("Closing the program, please be patient.\n");
