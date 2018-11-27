@@ -442,8 +442,8 @@ static const yytype_uint8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    26,    26,    29,    30,    33,    46,    57,    69,    82,
-      94
+       0,    26,    26,    29,    30,    33,    45,    56,    67,    79,
+      90
 };
 #endif
 
@@ -1228,89 +1228,93 @@ yyreduce:
     {
 
 				//check the input paramters are valid
-				if((yyvsp[-3].ival) > HEIGHT || (yyvsp[-3].ival) > WIDTH || (yyvsp[-3].ival) < 0){printf("Unvaild $2 input!");}
-				else if((yyvsp[-2].ival) > HEIGHT || (yyvsp[-2].ival) > WIDTH || (yyvsp[-2].ival) < 0){printf("Unvaild $3 input!");}
-				else if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){printf("Unvaild $4 input!");}
-				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){printf("Unvaild $5 input!");}
+				if((yyvsp[-3].ival) > HEIGHT || (yyvsp[-3].ival) > WIDTH || (yyvsp[-3].ival) < 0){;}
+				else if((yyvsp[-2].ival) > HEIGHT || (yyvsp[-2].ival) > WIDTH || (yyvsp[-2].ival) < 0){;}
+				else if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){;}
+				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){;}
 				else{
 					//draw the line
-					//printf("Draw LINE from (%s,%s) to (%s, %s)", $2, $3, $4, $5);
 					line((yyvsp[-3].ival), (yyvsp[-2].ival), (yyvsp[-1].ival), (yyvsp[0].ival));
 				}
 			}
-#line 1242 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
+#line 1241 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
     break;
 
   case 6:
-#line 46 "ZoomJoyStrong.y" /* yacc.c:1648  */
+#line 45 "ZoomJoyStrong.y" /* yacc.c:1648  */
     {
 
 				//check the input paramters are valid
-				if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){printf("Unvaild $2 input!");}
-				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){printf("Unvaild $3 input!");}
+				if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){;}
+				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){;}
 				else{
 					//draw the dot
-					//printf("Draw POINT at (%s,%s)", $2, $3);
+					printf("Draw POINT at (%s,%s)", (yyvsp[-1].ival), (yyvsp[0].ival));
 					point((yyvsp[-1].ival), (yyvsp[0].ival));
 				}
 			}
-#line 1258 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
+#line 1257 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
     break;
 
   case 7:
-#line 57 "ZoomJoyStrong.y" /* yacc.c:1648  */
+#line 56 "ZoomJoyStrong.y" /* yacc.c:1648  */
     {
 
 				//check the input paramters are valid
-				if((yyvsp[-2].ival) > HEIGHT || (yyvsp[-2].ival) > WIDTH || (yyvsp[-2].ival) < 0){printf("Unvaild $2 input!");}
-				else if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){printf("Unvaild $3 input!");}
-				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){printf("Unvaild $4 input!");}
+				if((yyvsp[-2].ival) > HEIGHT || (yyvsp[-2].ival) > WIDTH || (yyvsp[-2].ival) < 0){;}
+				else if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){;}
+				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){;}
 				else{
 					//draw the circle
-					//printf("Draw CIRCLE at (%s,%s) whit radio: %s", $2, $3, $4);
 					circle((yyvsp[-2].ival), (yyvsp[-1].ival), (yyvsp[0].ival));
 				}
 			}
-#line 1275 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
+#line 1273 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
     break;
 
   case 8:
-#line 69 "ZoomJoyStrong.y" /* yacc.c:1648  */
+#line 67 "ZoomJoyStrong.y" /* yacc.c:1648  */
     {
 
 				//check the input paramters are valid
-				if((yyvsp[-3].ival) > HEIGHT || (yyvsp[-3].ival) > WIDTH || (yyvsp[-3].ival) < 0){printf("Unvaild $2 input!");}
-				else if((yyvsp[-2].ival) > HEIGHT || (yyvsp[-2].ival) > WIDTH || (yyvsp[-2].ival) < 0){printf("Unvaild $3 input!");}
-				else if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){printf("Unvaild $4 input!");}
-				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){printf("Unvaild $5 input!");}
+				if((yyvsp[-3].ival) > HEIGHT || (yyvsp[-3].ival) > WIDTH || (yyvsp[-3].ival) < 0){;}
+				else if((yyvsp[-2].ival) > HEIGHT || (yyvsp[-2].ival) > WIDTH || (yyvsp[-2].ival) < 0){;}
+				else if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){;}
+				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){;}
 				else{
 					//draw the rectangle
-					//printf("Draw RECTANGLE width is %s and height is %s at (%s,%s) ", $4, $5, $2, $3);
 					rectangle((yyvsp[-3].ival), (yyvsp[-2].ival), (yyvsp[-1].ival), (yyvsp[0].ival));
 				}
 			}
-#line 1293 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
+#line 1290 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
     break;
 
   case 9:
-#line 82 "ZoomJoyStrong.y" /* yacc.c:1648  */
+#line 79 "ZoomJoyStrong.y" /* yacc.c:1648  */
     {
 
 				//check the input paramters are valid
-				if((yyvsp[-2].ival) > HEIGHT || (yyvsp[-2].ival) > WIDTH || (yyvsp[-2].ival) < 0){printf("Unvaild $2 input!");}
-				else if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){printf("Unvaild $3 input!");}
-				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){printf("Unvaild $4 input!");}
+				if((yyvsp[-2].ival) > HEIGHT || (yyvsp[-2].ival) > WIDTH || (yyvsp[-2].ival) < 0){;}
+				else if((yyvsp[-1].ival) > HEIGHT || (yyvsp[-1].ival) > WIDTH || (yyvsp[-1].ival) < 0){;}
+				else if((yyvsp[0].ival) > HEIGHT || (yyvsp[0].ival) > WIDTH || (yyvsp[0].ival) < 0){;}
 				else{
 					//set the color
-					//printf("Set COLOR (%s,%s, %s)", $2, $3, $4);
 					set_color((yyvsp[-2].ival), (yyvsp[-1].ival), (yyvsp[0].ival));
 				}
 			}
-#line 1310 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
+#line 1306 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
+    break;
+
+  case 10:
+#line 90 "ZoomJoyStrong.y" /* yacc.c:1648  */
+    {
+			finish();
+		}
+#line 1314 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
     break;
 
 
-#line 1314 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
+#line 1318 "ZoomJoyStrong.tab.c" /* yacc.c:1648  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -1538,7 +1542,7 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 97 "ZoomJoyStrong.y" /* yacc.c:1907  */
+#line 95 "ZoomJoyStrong.y" /* yacc.c:1907  */
 
 
 int main(int argc, char** argv){
